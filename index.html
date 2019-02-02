@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+{{1+1}}
+<div ng-controller="myCtrl2">
+
+
+    <section class="list" ng-repeat="robot in myFactory.arr">
+        <h1>
+            {{robot['age'] | adult}}
+        </h1>
+    </section>
+
+</div>
+<div ng-controller="myCtrl as myCtrl">
+    {{myCtrl.hello}}
+
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
